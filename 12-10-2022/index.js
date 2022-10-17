@@ -113,3 +113,16 @@ const contacts = [
   }
 
   lookUpProfile("Akira", "likes");
+
+
+  //VER LA RECURSIVIDAD
+  // Cambia solo el código debajo de esta línea
+function countdown(n){
+  if (n === 1){
+    return [];
+  }
+  const countArray = countdown( n - 1 );
+  countArray.push(n);
+  return countArray;
+}
+// Cambia solo el código encima de esta línea
