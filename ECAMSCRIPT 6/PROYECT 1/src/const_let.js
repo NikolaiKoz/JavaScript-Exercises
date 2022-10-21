@@ -13,3 +13,19 @@ while (count < 20) {
     console.log(`El contador esta en: ${count}`);
     count ++;
 }
+
+while (count < 20) {
+    console.log(`El contador esta en: ${count}`);
+    count ++;
+}
+while (count < 20) {
+    console.log(`El contador esta en: ${count}`);
+    count ++;
+}while (count < 20) {
+    console.log(`El contador esta en: ${count}`);
+    count ++;
+}
+while (count < 20) {
+    console.log(`El contador esta en: ${count}`);
+    count ++;
+}
