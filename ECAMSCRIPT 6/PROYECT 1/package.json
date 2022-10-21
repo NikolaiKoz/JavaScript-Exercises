@@ -6,5 +6,8 @@
   },
   "scripts": {
     "build": "babel src -d output --watch"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
   }
 }
