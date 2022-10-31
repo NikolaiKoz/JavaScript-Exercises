@@ -274,26 +274,69 @@ console.log(alt);
 // toda la información del user seleccionado en una oración con coherencia y
 // cohesión
 
-const dato = prompt('ingrese un numero del 1 al diez');
+// const dato = prompt('ingrese un numero del 1 al diez');
 
-let otro = JSONPlaceholder.find(user => user.id == dato);
+// let otro = JSONPlaceholder.find(user => user.id == dato);
 
-let otrootro = parseInt(dato);
+// let otrootro = parseInt(dato);
 
 // console.log(typeof otrootro)
 
-switch (otrootro){
-  case 1:
-  case 2:
-  case 3:
-  case 4:
-  case 5:
-  case 6:
-  case 7:
-  case 8:
-  case 9:
-  case 10: console.log(`Hi! i am ${otro.name} whith the ID ${otro.id} my username is ${otro.username}`); break;
-  default: console.log('Wrong option!'); break;
-};
+// switch (otrootro){
+//   case 1:
+//   case 2:
+//   case 3:
+//   case 4:
+//   case 5:
+//   case 6:
+//   case 7:
+//   case 8:
+//   case 9:
+//   case 10: console.log(`Hi! i am ${otro.name} whith the ID ${otro.id} my username is ${otro.username}`); break;
+//   default: console.log('Wrong option!'); break;
+// };
 
 //Problema con el switch
+
+console.log(JSONPlaceholder.pop());
+console.log(JSONPlaceholder.pop());
+console.log(JSONPlaceholder);
+
+const newObject = {
+  "id": 7,
+  "name": "Vallejos Jose Luis",
+  "username": "NikolaiKozlov  ",
+  "email": "Nicolai@Kozlov.info",
+  "address": {
+    "street": "Moscu - Russia",
+    "suite": "Lennin 998",
+    "city": "Moscu",
+    "zipcode": "23505-1337",
+    "geo": {
+      "lat": "-71.4197",
+      "lng": "71.7478"
+    }
+  },
+  "phone": "1-477-935-8478 x6430",
+  "website": "ola.org",
+  "company": {
+    "name": "Considine-Lockman",
+    "catchPhrase": "Synchronised bottom-line interface",
+    "bs": "e-enable innovative applications"
+  }
+}
+
+console.log(JSONPlaceholder.push(newObject));
+console.log(JSONPlaceholder);
+
+console.log(JSONPlaceholder.shift(newObject));
+console.log(JSONPlaceholder);
+
+console.log(JSONPlaceholder.unshift(newObject));
+console.log(JSONPlaceholder);
+
+result = JSONPlaceholder.map(function(JSONPlaceholder){
+  return `I am ${JSONPlaceholder.name}, my username is, ${JSONPlaceholder.username} and my phone is: ${JSONPlaceholder.phone}`;
+});
+
+console.log(result);
