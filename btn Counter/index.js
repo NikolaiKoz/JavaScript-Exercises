@@ -14,12 +14,12 @@ const display = document.getElementById("display");
 let counter = 0;
 
 add.addEventListener("click", () => {
-    if( counter < 5 ){
+    if( counter < 50 ){
         counter++;
         display.innerHTML = `Counter N° ${counter}`;
     }
     subtract.disabled = false;
-    if( counter === 5){
+    if( counter === 50){
         alert("MAX NUMBER");
         add.disabled = true;
     }
